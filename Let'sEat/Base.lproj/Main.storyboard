@@ -213,15 +213,68 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydt-VW-ii0">
-                                            <rect key="frame" x="337" y="35" width="46" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Button"/>
-                                            <connections>
-                                                <segue destination="vzC-qq-vfi" kind="presentation" id="Llo-GX-WBM"/>
-                                            </connections>
-                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wMJ-rC-6at">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OpK-AE-614" userLabel="Subtitle">
+                                                    <rect key="frame" x="8" y="24" width="390" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="VVr-RQ-N2L"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                    <color key="textColor" name="LetsEat Light Grey"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Oj-nG-VeX" userLabel="Title">
+                                                    <rect key="frame" x="8" y="45" width="294" height="37"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="37" id="uAI-R3-T5a"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydt-VW-ii0">
+                                                    <rect key="frame" x="310" y="50" width="96" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="25" id="bZ1-OI-eI2"/>
+                                                        <constraint firstAttribute="width" constant="96" id="trG-5c-VKT"/>
+                                                    </constraints>
+                                                    <state key="normal" image="btn-location"/>
+                                                    <connections>
+                                                        <segue destination="vzC-qq-vfi" kind="presentation" id="Llo-GX-WBM"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VkX-c7-lQ7">
+                                                    <rect key="frame" x="8" y="89" width="398" height="1"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="gO4-o9-xuB"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="VkX-c7-lQ7" secondAttribute="trailing" constant="8" id="1F6-hL-zdM"/>
+                                                <constraint firstAttribute="trailing" secondItem="ydt-VW-ii0" secondAttribute="trailing" constant="8" id="4jH-cv-mqH"/>
+                                                <constraint firstAttribute="height" constant="90" id="89q-0g-oxs"/>
+                                                <constraint firstItem="VkX-c7-lQ7" firstAttribute="leading" secondItem="wMJ-rC-6at" secondAttribute="leading" constant="8" id="Bt2-3h-X6C"/>
+                                                <constraint firstItem="1Oj-nG-VeX" firstAttribute="top" secondItem="OpK-AE-614" secondAttribute="bottom" id="Llj-og-Zem"/>
+                                                <constraint firstItem="ydt-VW-ii0" firstAttribute="leading" secondItem="1Oj-nG-VeX" secondAttribute="trailing" constant="8" id="YFl-CD-47k"/>
+                                                <constraint firstItem="ydt-VW-ii0" firstAttribute="top" secondItem="OpK-AE-614" secondAttribute="bottom" constant="5" id="Yts-dg-nWX"/>
+                                                <constraint firstAttribute="trailing" secondItem="OpK-AE-614" secondAttribute="trailing" constant="16" id="ZvY-ww-nWT"/>
+                                                <constraint firstItem="1Oj-nG-VeX" firstAttribute="leading" secondItem="wMJ-rC-6at" secondAttribute="leading" constant="8" id="aDa-DO-sMY"/>
+                                                <constraint firstAttribute="bottom" secondItem="VkX-c7-lQ7" secondAttribute="bottom" id="gGp-2B-alg"/>
+                                                <constraint firstItem="OpK-AE-614" firstAttribute="top" secondItem="wMJ-rC-6at" secondAttribute="top" constant="24" id="p6W-Qa-xGS"/>
+                                                <constraint firstItem="OpK-AE-614" firstAttribute="leading" secondItem="wMJ-rC-6at" secondAttribute="leading" constant="8" id="pHZ-o4-Irr"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wMJ-rC-6at" firstAttribute="top" secondItem="i4g-Yq-sGt" secondAttribute="top" id="M7W-h8-wHs"/>
+                                        <constraint firstItem="wMJ-rC-6at" firstAttribute="leading" secondItem="i4g-Yq-sGt" secondAttribute="leading" id="W2n-dk-jcl"/>
+                                        <constraint firstAttribute="trailing" secondItem="wMJ-rC-6at" secondAttribute="trailing" id="egP-mZ-bOE"/>
+                                    </constraints>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="U4H-up-pJO" id="220-67-x69"/>
@@ -359,10 +412,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btn-location" width="96" height="25"/>
         <image name="icon-explore-on" width="35" height="23"/>
         <image name="icon-map-on" width="16" height="22"/>
         <namedColor name="Demo Grey">
             <color red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LetsEat Light Grey">
+            <color red="0.68627450980392157" green="0.68627450980392157" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
