@@ -16,20 +16,23 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        20
+        return manager.numberOfItems()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCell", for: indexPath) as! ExploreCell
+        let item = manager.explore(at: indexPath)
+        cell.lblname.text = item.name
+        cell.imgExplore.image = UIImage(named: item.image)
         return cell
     }
 
     @IBOutlet weak var collectionView: UICollectionView!
+    let manager = ExploreDataManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let manager = ExploreDataManager()
         manager.fetch()
     }
     

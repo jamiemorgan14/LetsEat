@@ -18,6 +18,13 @@ class ExploreDataManager {
         }
     }
     
+    func numberOfItems() -> Int {
+        return items.count
+    }
+    
+    func explore(at index: IndexPath) -> ExploreItem {
+        return items[index.item]
+    }
     // fileprivate means means method may only be used in this class
     fileprivate func loadData() -> [[String: AnyObject]] {
         // guard statement attempts to perform two statements, declaring the path and items constants
