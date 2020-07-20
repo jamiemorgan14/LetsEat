@@ -28,8 +28,9 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        let manager = ExploreDataManager()
+        manager.fetch()
     }
     
     @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
