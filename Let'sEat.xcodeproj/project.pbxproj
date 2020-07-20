@@ -26,6 +26,7 @@
 		5CC0BC6724C40BE500EC2AA1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../iOS13ForBeginners/iOS-13-Programming-for-Beginners/Chapter09/Assets.xcassets"; sourceTree = "<group>"; };
 		5CC0BC6A24C418A900EC2AA1 /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		5CC0BC6D24C4301800EC2AA1 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		5CC0BC6F24C5413400EC2AA1 /* CollectionViewBasics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = CollectionViewBasics.playground; path = ../../CollectionViewBasics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		5CC0BC5224C3FC5E00EC2AA1 /* Let'sEat */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0BC6F24C5413400EC2AA1 /* CollectionViewBasics.playground */,
 				5CC0BC6C24C42FEA00EC2AA1 /* Restaurants */,
 				5CC0BC6924C4176400EC2AA1 /* Explore */,
 				5CC0BC5324C3FC5E00EC2AA1 /* AppDelegate.swift */,
