@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C8DC87524C78BC100F2ABD9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8DC87424C78BC100F2ABD9 /* MapViewController.swift */; };
 		5C92447324C6A98B00B05A0C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C92447224C6A98B00B05A0C /* LocationViewController.swift */; };
 		5C92447524C6AE1E00B05A0C /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C92447424C6AE1E00B05A0C /* Locations.plist */; };
 		5C92447724C6AFAF00B05A0C /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C92447624C6AFAF00B05A0C /* LocationDataManager.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C8DC87424C78BC100F2ABD9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5C92447224C6A98B00B05A0C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		5C92447424C6AE1E00B05A0C /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 		5C92447624C6AFAF00B05A0C /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				5C92447924C6B65200B05A0C /* Model */,
+				5C8DC87424C78BC100F2ABD9 /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				5CC0BC7924C56FCC00EC2AA1 /* ExploreCell.swift in Sources */,
 				5CC0BC5424C3FC5E00EC2AA1 /* AppDelegate.swift in Sources */,
 				5CC0BC6E24C4301800EC2AA1 /* RestaurantListViewController.swift in Sources */,
+				5C8DC87524C78BC100F2ABD9 /* MapViewController.swift in Sources */,
 				5CC0BC5624C3FC5E00EC2AA1 /* SceneDelegate.swift in Sources */,
 				5CC0BC6B24C418A900EC2AA1 /* ExploreViewController.swift in Sources */,
 				5CC0BC7624C56A5500EC2AA1 /* ExploreDataManager.swift in Sources */,
