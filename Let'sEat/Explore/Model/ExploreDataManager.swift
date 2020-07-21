@@ -8,12 +8,12 @@
 
 import Foundation
 
-class ExploreDataManager {
+class ExploreDataManager: DataManager {
     
     fileprivate var items: [ExploreItem] = []
     
     func fetch() {
-        for data in loadData() {
+        for data in load(file: "ExploreData") {
             items.append(ExploreItem(dict: data))
         }
     }
@@ -24,19 +24,5 @@ class ExploreDataManager {
     
     func explore(at index: IndexPath) -> ExploreItem {
         return items[index.item]
-    }
-    // fileprivate means means method may only be used in this class
-    fileprivate func loadData() -> [[String: AnyObject]] {
-        // guard statement attempts to perform two statements, declaring the path and items constants
-        //if either is unsuccessful, the else block returns an empty array of dicts
-        // Bundle is the resulting folder of a build, Explore.plist is inside this bundle.
-        // Bundle.main.path(//@ExploreData.plist)
-        // let items = ... tries to create an array from the contets of the exploreData.plist file and assign to items
-        guard let path = Bundle.main.path(forResource: "ExploreData", ofType: "plist"),
-            let items = NSArray(contentsOfFile: path)
-            else {
-                return [[:]]
-        }
-        return items as! [[String: AnyObject]]
     }
 }
