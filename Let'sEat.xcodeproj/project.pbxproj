@@ -35,7 +35,7 @@
 		5C92447C24C6B72700B05A0C /* RestaurantItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantItem.swift; sourceTree = "<group>"; };
 		5C92447F24C6BA6F00B05A0C /* MapDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDataManager.swift; sourceTree = "<group>"; };
 		5C92448224C6BC8400B05A0C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		5CC0BC5024C3FC5E00EC2AA1 /* Let'sEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let'sEat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC0BC5024C3FC5E00EC2AA1 /* Let's Eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let's Eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC0BC5324C3FC5E00EC2AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC0BC5524C3FC5E00EC2AA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5CC0BC5A24C3FC5E00EC2AA1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		5CC0BC5124C3FC5E00EC2AA1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5CC0BC5024C3FC5E00EC2AA1 /* Let'sEat.app */,
+				5CC0BC5024C3FC5E00EC2AA1 /* Let's Eat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,7 +200,7 @@
 			);
 			name = "Let'sEat";
 			productName = "Let'sEat";
-			productReference = 5CC0BC5024C3FC5E00EC2AA1 /* Let'sEat.app */;
+			productReference = 5CC0BC5024C3FC5E00EC2AA1 /* Let's Eat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -419,8 +419,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codingjamie.Let-sEat";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingjamie.LetsEat;
+				PRODUCT_NAME = "Let's Eat";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -437,8 +437,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.codingjamie.Let-sEat";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.codingjamie.LetsEat;
+				PRODUCT_NAME = "Let's Eat";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
