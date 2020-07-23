@@ -8,7 +8,26 @@
 
 import UIKit
 
-class ExploreViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class ExploreViewController: UIViewController, UICollectionViewDelegate {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        manager.fetch()
+    }
+    
+    @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
+        
+    }
+}
+
+// MARK: Private Extension
+private extension ExploreViewController {
+    
+}
+
+// MARK: UICollectionViewDataSource
+extension ExploreViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "header", for: indexPath)
@@ -27,17 +46,8 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
         cell.imgExplore.image = UIImage(named: item.image)
         return cell
     }
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     let manager = ExploreDataManager()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        manager.fetch()
-    }
-    
-    @IBAction func unwindLocationCancel(segue: UIStoryboardSegue) {
-        
-    }
- }
+}
