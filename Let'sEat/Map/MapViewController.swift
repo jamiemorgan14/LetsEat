@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, MKMapViewDelegate {
+class MapViewController: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     let manager = MapDataManager()
@@ -28,10 +28,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             print("Segue not added")
         }
     }
-    
+}
+
+// MARK: Private Extension
+private extension MapViewController {
     func initialize() {
-        manager.fetch { (annotations) in addMap(annotations) }
         mapView.delegate = self
+        manager.fetch { (annotations) in addMap(annotations) }
     }
     
     func addMap(_ annotations: [RestaurantItem]) {
@@ -46,6 +49,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
     }
     
+}
+
+// MKMapViewDelegate
+extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         guard let annotation = mapView.selectedAnnotations.first else { return }
         selectedRestaurant = annotation as? RestaurantItem
