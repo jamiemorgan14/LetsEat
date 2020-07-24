@@ -28,6 +28,7 @@
 		5C8E382924CA7F77009DE9EF /* Aspen.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C8E381B24CA7F77009DE9EF /* Aspen.json */; };
 		5C8E382A24CA7F77009DE9EF /* Miami.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C8E381C24CA7F77009DE9EF /* Miami.json */; };
 		5C8E382C24CA80CE009DE9EF /* RestaurantAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E382B24CA80CE009DE9EF /* RestaurantAPIManager.swift */; };
+		5C8E382E24CA9BD1009DE9EF /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E382D24CA9BD1009DE9EF /* LocationItem.swift */; };
 		5C92447324C6A98B00B05A0C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C92447224C6A98B00B05A0C /* LocationViewController.swift */; };
 		5C92447524C6AE1E00B05A0C /* Locations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C92447424C6AE1E00B05A0C /* Locations.plist */; };
 		5C92447724C6AFAF00B05A0C /* LocationDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C92447624C6AFAF00B05A0C /* LocationDataManager.swift */; };
@@ -70,6 +71,7 @@
 		5C8E381B24CA7F77009DE9EF /* Aspen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Aspen.json; sourceTree = "<group>"; };
 		5C8E381C24CA7F77009DE9EF /* Miami.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Miami.json; sourceTree = "<group>"; };
 		5C8E382B24CA80CE009DE9EF /* RestaurantAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantAPIManager.swift; sourceTree = "<group>"; };
+		5C8E382D24CA9BD1009DE9EF /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
 		5C92447224C6A98B00B05A0C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		5C92447424C6AE1E00B05A0C /* Locations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Locations.plist; sourceTree = "<group>"; };
 		5C92447624C6AFAF00B05A0C /* LocationDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataManager.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 			children = (
 				5C92447424C6AE1E00B05A0C /* Locations.plist */,
 				5C92447624C6AFAF00B05A0C /* LocationDataManager.swift */,
+				5C8E382D24CA9BD1009DE9EF /* LocationItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8E382E24CA9BD1009DE9EF /* LocationItem.swift in Sources */,
 				5CC0BC7424C5677D00EC2AA1 /* ExploreItem.swift in Sources */,
 				5C92448324C6BC8400B05A0C /* DataManager.swift in Sources */,
 				5C92448024C6BA6F00B05A0C /* MapDataManager.swift in Sources */,
