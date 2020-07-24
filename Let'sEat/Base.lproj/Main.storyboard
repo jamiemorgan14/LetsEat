@@ -429,6 +429,9 @@
                                         <constraint firstItem="wMJ-rC-6at" firstAttribute="leading" secondItem="i4g-Yq-sGt" secondAttribute="leading" id="W2n-dk-jcl"/>
                                         <constraint firstAttribute="trailing" secondItem="wMJ-rC-6at" secondAttribute="trailing" id="egP-mZ-bOE"/>
                                     </constraints>
+                                    <connections>
+                                        <outlet property="lblLocation" destination="OpK-AE-614" id="WNo-tr-4EW"/>
+                                    </connections>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="U4H-up-pJO" id="220-67-x69"/>
@@ -505,7 +508,11 @@
                                 <segue destination="2kB-qe-s5n" kind="unwind" unwindAction="unwindLocationCancelWithSegue:" id="FyL-qd-7F8"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fq4-zd-udL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fq4-zd-udL">
+                            <connections>
+                                <segue destination="2kB-qe-s5n" kind="unwind" unwindAction="unwindLocationDoneWithSegue:" id="cvM-EY-Aey"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="TSu-af-ofd" id="XXF-nc-NbT"/>

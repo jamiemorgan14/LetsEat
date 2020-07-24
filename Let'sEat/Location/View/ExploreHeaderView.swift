@@ -9,5 +9,6 @@
 import UIKit
 
 class ExploreHeaderView: UICollectionReusableView {
-        
+    @IBOutlet weak var lblLocation: UILabel!
+    
 }
