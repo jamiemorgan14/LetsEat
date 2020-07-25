@@ -10,11 +10,24 @@ import UIKit
 
 class RestaurantListViewController: UIViewController, UICollectionViewDelegate {
     
+    var selectedRestaurant: RestaurantItem?
+    var selectedCity: LocationItem?
+    var selectedType: String?
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        guard let location = selectedCity?.city,
+            let type = selectedType else {
+                return
+        }
+        print("type \(type)")
+        print(RestaurantAPIManager.loadJSON(file: location))
     }
 }
 

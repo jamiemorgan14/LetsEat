@@ -359,7 +359,7 @@
                                         <connections>
                                             <outlet property="imgExplore" destination="siJ-HP-kaR" id="YIx-y2-a1b"/>
                                             <outlet property="lblname" destination="Knc-0e-Jbb" id="Pmg-oT-43g"/>
-                                            <segue destination="gga-6T-99P" kind="show" id="zWH-Gs-aPt"/>
+                                            <segue destination="gga-6T-99P" kind="show" identifier="restaurantList" id="zWH-Gs-aPt"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -396,7 +396,7 @@
                                                     </constraints>
                                                     <state key="normal" image="btn-location"/>
                                                     <connections>
-                                                        <segue destination="vzC-qq-vfi" kind="presentation" id="Llo-GX-WBM"/>
+                                                        <segue destination="vzC-qq-vfi" kind="presentation" identifier="locationList" id="Llo-GX-WBM"/>
                                                     </connections>
                                                 </button>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VkX-c7-lQ7">
