@@ -39,6 +39,8 @@
 		5C92448324C6BC8400B05A0C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C92448224C6BC8400B05A0C /* DataManager.swift */; };
 		5C9EB0C624CFEA0A0009D067 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EB0C524CFEA0A0009D067 /* RestaurantCell.swift */; };
 		5C9EB0C924CFED0A0009D067 /* RestaurantDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EB0C824CFED0A0009D067 /* RestaurantDataManager.swift */; };
+		5C9EB0CD24D0E5CA0009D067 /* NoDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9EB0CC24D0E5CA0009D067 /* NoDataView.swift */; };
+		5C9EB0CF24D0E6100009D067 /* NoDataView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C9EB0CE24D0E6100009D067 /* NoDataView.xib */; };
 		5CC0BC5424C3FC5E00EC2AA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0BC5324C3FC5E00EC2AA1 /* AppDelegate.swift */; };
 		5CC0BC5624C3FC5E00EC2AA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0BC5524C3FC5E00EC2AA1 /* SceneDelegate.swift */; };
 		5CC0BC5B24C3FC5E00EC2AA1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC0BC5924C3FC5E00EC2AA1 /* Main.storyboard */; };
@@ -85,6 +87,8 @@
 		5C92448224C6BC8400B05A0C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		5C9EB0C524CFEA0A0009D067 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		5C9EB0C824CFED0A0009D067 /* RestaurantDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDataManager.swift; sourceTree = "<group>"; };
+		5C9EB0CC24D0E5CA0009D067 /* NoDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataView.swift; sourceTree = "<group>"; };
+		5C9EB0CE24D0E6100009D067 /* NoDataView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoDataView.xib; sourceTree = "<group>"; };
 		5CC0BC5024C3FC5E00EC2AA1 /* Let's Eat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Let's Eat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC0BC5324C3FC5E00EC2AA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CC0BC5524C3FC5E00EC2AA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,7 +140,7 @@
 			path = PhotoFilter;
 			sourceTree = "<group>";
 		};
-		5C8E380E24CA7F5E009DE9EF /* New Group */ = {
+		5C8E380E24CA7F5E009DE9EF /* Locations */ = {
 			isa = PBXGroup;
 			children = (
 				5C8E381B24CA7F77009DE9EF /* Aspen.json */,
@@ -154,7 +158,7 @@
 				5C8E381324CA7F76009DE9EF /* San Antonio.json */,
 				5C8E381A24CA7F77009DE9EF /* San Francisco.json */,
 			);
-			path = "New Group";
+			path = Locations;
 			sourceTree = "<group>";
 		};
 		5C92446F24C6A91600B05A0C /* Location */ = {
@@ -207,7 +211,8 @@
 		5C92448124C6BC7100B05A0C /* Misc */ = {
 			isa = PBXGroup;
 			children = (
-				5C8E380E24CA7F5E009DE9EF /* New Group */,
+				5C9EB0CB24D0E5A10009D067 /* No Data */,
+				5C8E380E24CA7F5E009DE9EF /* Locations */,
 				5C92448224C6BC8400B05A0C /* DataManager.swift */,
 				5C8DC87F24C7EA0700F2ABD9 /* Segue.swift */,
 				5C8E382B24CA80CE009DE9EF /* RestaurantAPIManager.swift */,
@@ -229,6 +234,15 @@
 				5C9EB0C824CFED0A0009D067 /* RestaurantDataManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5C9EB0CB24D0E5A10009D067 /* No Data */ = {
+			isa = PBXGroup;
+			children = (
+				5C9EB0CC24D0E5CA0009D067 /* NoDataView.swift */,
+				5C9EB0CE24D0E6100009D067 /* NoDataView.xib */,
+			);
+			path = "No Data";
 			sourceTree = "<group>";
 		};
 		5CC0BC4724C3FC5E00EC2AA1 = {
@@ -373,6 +387,7 @@
 				5CC0BC6024C3FC6000EC2AA1 /* LaunchScreen.storyboard in Resources */,
 				5C8E382624CA7F77009DE9EF /* Charleston.json in Resources */,
 				5C8DC87E24C7E91A00F2ABD9 /* PhotoFilter.storyboard in Resources */,
+				5C9EB0CF24D0E6100009D067 /* NoDataView.xib in Resources */,
 				5C8E382A24CA7F77009DE9EF /* Miami.json in Resources */,
 				5C8E382324CA7F77009DE9EF /* New Orleans.json in Resources */,
 				5C8E382224CA7F77009DE9EF /* Las Vegas.json in Resources */,
@@ -407,6 +422,7 @@
 				5CC0BC5424C3FC5E00EC2AA1 /* AppDelegate.swift in Sources */,
 				5C8E383024CAA467009DE9EF /* ExploreHeaderView.swift in Sources */,
 				5C8DC88024C7EA0700F2ABD9 /* Segue.swift in Sources */,
+				5C9EB0CD24D0E5CA0009D067 /* NoDataView.swift in Sources */,
 				5C9EB0C624CFEA0A0009D067 /* RestaurantCell.swift in Sources */,
 				5CC0BC6E24C4301800EC2AA1 /* RestaurantListViewController.swift in Sources */,
 				5C8DC88224C7EED100F2ABD9 /* RestaurantDetailViewController.swift in Sources */,
