@@ -54,6 +54,10 @@
 		5CC0BC7624C56A5500EC2AA1 /* ExploreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0BC7524C56A5500EC2AA1 /* ExploreDataManager.swift */; };
 		5CC0BC7924C56FCC00EC2AA1 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0BC7824C56FCC00EC2AA1 /* ExploreCell.swift */; };
 		5CC2C5B824DA63AE0056BFB4 /* ReviewFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5B724DA63AE0056BFB4 /* ReviewFormViewController.swift */; };
+		5CC2C5BB24DB23C50056BFB4 /* FilterData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CC2C5BA24DB23C40056BFB4 /* FilterData.plist */; };
+		5CC2C5BE24DB240E0056BFB4 /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5BD24DB240E0056BFB4 /* FilterItem.swift */; };
+		5CC2C5C024DB28430056BFB4 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */; };
+		5CC2C5C224DB295B0056BFB4 /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +110,10 @@
 		5CC0BC7524C56A5500EC2AA1 /* ExploreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreDataManager.swift; sourceTree = "<group>"; };
 		5CC0BC7824C56FCC00EC2AA1 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		5CC2C5B724DA63AE0056BFB4 /* ReviewFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewFormViewController.swift; sourceTree = "<group>"; };
+		5CC2C5BA24DB23C40056BFB4 /* FilterData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FilterData.plist; sourceTree = "<group>"; };
+		5CC2C5BD24DB240E0056BFB4 /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
+		5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
+		5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +139,7 @@
 		5C8DC87924C7E8F100F2ABD9 /* ReviewForm */ = {
 			isa = PBXGroup;
 			children = (
+				5CC2C5BC24DB23FC0056BFB4 /* Model */,
 				5C8DC87B24C7E90F00F2ABD9 /* ReviewForm.storyboard */,
 				5C9EB0D024D51F460009D067 /* RatingsView.swift */,
 				5CC2C5B724DA63AE0056BFB4 /* ReviewFormViewController.swift */,
@@ -141,7 +150,10 @@
 		5C8DC87A24C7E8FE00F2ABD9 /* PhotoFilter */ = {
 			isa = PBXGroup;
 			children = (
+				5CC2C5B924DB23A90056BFB4 /* Model */,
 				5C8DC87D24C7E91A00F2ABD9 /* PhotoFilter.storyboard */,
+				5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */,
+				5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */,
 			);
 			path = PhotoFilter;
 			sourceTree = "<group>";
@@ -326,6 +338,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		5CC2C5B924DB23A90056BFB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CC2C5BA24DB23C40056BFB4 /* FilterData.plist */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5CC2C5BC24DB23FC0056BFB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5CC2C5BD24DB240E0056BFB4 /* FilterItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,6 +429,7 @@
 				5C8DC87C24C7E91000F2ABD9 /* ReviewForm.storyboard in Resources */,
 				5C8E382924CA7F77009DE9EF /* Aspen.json in Resources */,
 				5C8E382424CA7F77009DE9EF /* Boston.json in Resources */,
+				5CC2C5BB24DB23C50056BFB4 /* FilterData.plist in Resources */,
 				5CC0BC6824C40BE500EC2AA1 /* Assets.xcassets in Resources */,
 				5C92447524C6AE1E00B05A0C /* Locations.plist in Resources */,
 				5C8E382124CA7F77009DE9EF /* San Antonio.json in Resources */,
@@ -418,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC2C5BE24DB240E0056BFB4 /* FilterItem.swift in Sources */,
 				5C9EB0C924CFED0A0009D067 /* RestaurantDataManager.swift in Sources */,
 				5CC2C5B824DA63AE0056BFB4 /* ReviewFormViewController.swift in Sources */,
 				5C8E382E24CA9BD1009DE9EF /* LocationItem.swift in Sources */,
@@ -432,12 +462,14 @@
 				5C8DC88024C7EA0700F2ABD9 /* Segue.swift in Sources */,
 				5C9EB0CD24D0E5CA0009D067 /* NoDataView.swift in Sources */,
 				5C9EB0C624CFEA0A0009D067 /* RestaurantCell.swift in Sources */,
+				5CC2C5C024DB28430056BFB4 /* FilterManager.swift in Sources */,
 				5CC0BC6E24C4301800EC2AA1 /* RestaurantListViewController.swift in Sources */,
 				5C8DC88224C7EED100F2ABD9 /* RestaurantDetailViewController.swift in Sources */,
 				5C8DC87524C78BC100F2ABD9 /* MapViewController.swift in Sources */,
 				5CC0BC5624C3FC5E00EC2AA1 /* SceneDelegate.swift in Sources */,
 				5CC0BC6B24C418A900EC2AA1 /* ExploreViewController.swift in Sources */,
 				5CC0BC7624C56A5500EC2AA1 /* ExploreDataManager.swift in Sources */,
+				5CC2C5C224DB295B0056BFB4 /* ImageFiltering.swift in Sources */,
 				5C92447D24C6B72700B05A0C /* RestaurantItem.swift in Sources */,
 				5C92447724C6AFAF00B05A0C /* LocationDataManager.swift in Sources */,
 				5C92447324C6A98B00B05A0C /* LocationViewController.swift in Sources */,
