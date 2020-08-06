@@ -59,6 +59,7 @@
 		5CC2C5C024DB28430056BFB4 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */; };
 		5CC2C5C224DB295B0056BFB4 /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */; };
 		5CC2C5C424DBB58D0056BFB4 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5C324DBB58D0056BFB4 /* FilterCell.swift */; };
+		5CC2C5C624DBB9010056BFB4 /* PhotoFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5C524DBB9010056BFB4 /* PhotoFilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
 		5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
 		5CC2C5C324DBB58D0056BFB4 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		5CC2C5C524DBB9010056BFB4 /* PhotoFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */,
 				5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */,
 				5CC2C5C324DBB58D0056BFB4 /* FilterCell.swift */,
+				5CC2C5C524DBB9010056BFB4 /* PhotoFilterViewController.swift */,
 			);
 			path = PhotoFilter;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC2C5BE24DB240E0056BFB4 /* FilterItem.swift in Sources */,
+				5CC2C5C624DBB9010056BFB4 /* PhotoFilterViewController.swift in Sources */,
 				5C9EB0C924CFED0A0009D067 /* RestaurantDataManager.swift in Sources */,
 				5CC2C5B824DA63AE0056BFB4 /* ReviewFormViewController.swift in Sources */,
 				5C8E382E24CA9BD1009DE9EF /* LocationItem.swift in Sources */,
