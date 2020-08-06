@@ -58,6 +58,7 @@
 		5CC2C5BE24DB240E0056BFB4 /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5BD24DB240E0056BFB4 /* FilterItem.swift */; };
 		5CC2C5C024DB28430056BFB4 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */; };
 		5CC2C5C224DB295B0056BFB4 /* ImageFiltering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */; };
+		5CC2C5C424DBB58D0056BFB4 /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2C5C324DBB58D0056BFB4 /* FilterCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,7 @@
 		5CC2C5BD24DB240E0056BFB4 /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
 		5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
 		5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFiltering.swift; sourceTree = "<group>"; };
+		5CC2C5C324DBB58D0056BFB4 /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				5C8DC87D24C7E91A00F2ABD9 /* PhotoFilter.storyboard */,
 				5CC2C5BF24DB28430056BFB4 /* FilterManager.swift */,
 				5CC2C5C124DB295B0056BFB4 /* ImageFiltering.swift */,
+				5CC2C5C324DBB58D0056BFB4 /* FilterCell.swift */,
 			);
 			path = PhotoFilter;
 			sourceTree = "<group>";
@@ -472,6 +475,7 @@
 				5CC2C5C224DB295B0056BFB4 /* ImageFiltering.swift in Sources */,
 				5C92447D24C6B72700B05A0C /* RestaurantItem.swift in Sources */,
 				5C92447724C6AFAF00B05A0C /* LocationDataManager.swift in Sources */,
+				5CC2C5C424DBB58D0056BFB4 /* FilterCell.swift in Sources */,
 				5C92447324C6A98B00B05A0C /* LocationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
