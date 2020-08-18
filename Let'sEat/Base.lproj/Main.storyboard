@@ -252,8 +252,9 @@
                                                         <constraint firstAttribute="height" constant="156" id="zyn-jW-t16"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knc-0e-Jbb">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Knc-0e-Jbb">
                                                     <rect key="frame" x="8" y="165" width="180" height="21"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="uVq-Qx-b33"/>
                                                     </constraints>
@@ -271,7 +272,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="Knc-0e-Jbb" secondAttribute="trailing" constant="8" id="tv4-N4-YeS"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="imgExplore" destination="siJ-HP-kaR" id="YIx-y2-a1b"/>
                                             <outlet property="lblname" destination="Knc-0e-Jbb" id="Pmg-oT-43g"/>
