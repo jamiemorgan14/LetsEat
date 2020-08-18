@@ -70,6 +70,8 @@ private extension PhotoFilterViewController {
                     self.showCameraUserInterface()
                 }
             }
+        @unknown default:
+            fatalError()
         }
     }
     
