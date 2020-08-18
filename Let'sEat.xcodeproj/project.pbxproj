@@ -22,6 +22,7 @@
 		5C42114F24EB8A5F00D28920 /* San Francisco.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C42114124EB8A5F00D28920 /* San Francisco.json */; };
 		5C42115024EB8A5F00D28920 /* Portland.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C42114224EB8A5F00D28920 /* Portland.json */; };
 		5C42115124EB8A5F00D28920 /* Aspen.json in Resources */ = {isa = PBXBuildFile; fileRef = 5C42114324EB8A5F00D28920 /* Aspen.json */; };
+		5C42115324EB8CB700D28920 /* ReviewDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C42115224EB8CB700D28920 /* ReviewDataManager.swift */; };
 		5C7317B524EB79C5006C5855 /* RestaurantPhotoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7317B424EB79C5006C5855 /* RestaurantPhotoItem.swift */; };
 		5C7317B724EB7B52006C5855 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7317B624EB7B52006C5855 /* CoreDataManager.swift */; };
 		5C821B5F24EB7421003FEED0 /* LetsEatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C821B5D24EB7421003FEED0 /* LetsEatModel.xcdatamodeld */; };
@@ -82,6 +83,7 @@
 		5C42114124EB8A5F00D28920 /* San Francisco.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "San Francisco.json"; sourceTree = "<group>"; };
 		5C42114224EB8A5F00D28920 /* Portland.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Portland.json; sourceTree = "<group>"; };
 		5C42114324EB8A5F00D28920 /* Aspen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Aspen.json; sourceTree = "<group>"; };
+		5C42115224EB8CB700D28920 /* ReviewDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDataManager.swift; sourceTree = "<group>"; };
 		5C7317B424EB79C5006C5855 /* RestaurantPhotoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantPhotoItem.swift; sourceTree = "<group>"; };
 		5C7317B624EB7B52006C5855 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		5C821B5E24EB7421003FEED0 /* LetsEatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LetsEatModel.xcdatamodel; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				5C92448224C6BC8400B05A0C /* DataManager.swift */,
 				5C8DC87F24C7EA0700F2ABD9 /* Segue.swift */,
 				5C8E382B24CA80CE009DE9EF /* RestaurantAPIManager.swift */,
+				5C42115224EB8CB700D28920 /* ReviewDataManager.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 				5CC2C5BE24DB240E0056BFB4 /* FilterItem.swift in Sources */,
 				5CC2C5C624DBB9010056BFB4 /* PhotoFilterViewController.swift in Sources */,
 				5C9EB0C924CFED0A0009D067 /* RestaurantDataManager.swift in Sources */,
+				5C42115324EB8CB700D28920 /* ReviewDataManager.swift in Sources */,
 				5CC2C5B824DA63AE0056BFB4 /* ReviewFormViewController.swift in Sources */,
 				5C8E382E24CA9BD1009DE9EF /* LocationItem.swift in Sources */,
 				5CC0BC7424C5677D00EC2AA1 /* ExploreItem.swift in Sources */,
