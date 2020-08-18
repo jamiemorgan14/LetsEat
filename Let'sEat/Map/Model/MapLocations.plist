@@ -176,7 +176,7 @@
 		<key>postal_code</key>
 		<string>90026</string>
 		<key>price</key>
-		<integer>2</integer>
+		<integer>3</integer>
 		<key>reserve_url</key>
 		<string>http://www.opentable.com/single.aspx?rid=151228</string>
 		<key>state</key>
